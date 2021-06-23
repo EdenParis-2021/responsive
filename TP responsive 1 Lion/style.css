@@ -1,0 +1,176 @@
+body{
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.glb{
+    border: 2px solid black;
+    margin: 5px;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0 auto;
+}
+h1, h2{
+    margin: 0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+li{
+    list-style: none;
+    padding: 5px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+header, footer{
+    background-color: purple;
+}
+nav{
+    background-color: indigo;
+}
+main{
+    display: flex;
+    margin: 7px;
+}
+.block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .block:first-of-type div:first-of-type{
+    background: linear-gradient(0.25turn, #800080, #6495ED, #00FA9A);
+}
+main .block:last-of-type div:last-of-type{
+    background: linear-gradient(0.25turn,#00FA9A , #6495ED, #800080);
+}
+main .block div{
+    background-color: cornflowerblue;
+    height: 35em;
+    margin: 10px;
+}
+@media screen and (max-width: 576px) {
+    main .block div{
+        margin: 0;
+        height: 12em;
+    }
+    nav{
+        background-color: blue;
+    }
+    main{
+        flex-direction: column;
+        margin: 20px;
+    }
+    main .block:first-of-type div:first-of-type{
+        background: goldenrod;
+    }
+    main .block:first-of-type div:last-of-type{
+        background: blue;
+    }
+    main .block:last-of-type div:first-of-type{
+        background: khaki;
+    }
+    main .block:last-of-type div:last-of-type{
+        background: peru;
+    }
+    ul{
+        width: 75%;
+        margin: 0;
+    }
+    li a{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 800px) {
+    main .block div{
+        height: 15em;
+        margin: 4px;
+    }
+    main .block:first-of-type div:first-of-type{
+        background: orange;
+    }
+    main .block:first-of-type div:last-of-type{
+        background: yellow;
+    }
+    main .block:last-of-type div:first-of-type{
+        background: green;
+    }
+    main .block:last-of-type div:last-of-type{
+        background: pink;
+    }
+    nav{
+        background-color: red;
+    }
+    header, footer{
+        background-color: blue;
+    }
+    ul{
+        width: 75%;
+        margin: 0;
+        line-height: 7px;
+        padding-bottom: 1rem;
+    }
+    li a{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1200px){
+    main .block:first-of-type div:first-of-type{
+        background: goldenrod;
+    }
+    main .block:first-of-type div:last-of-type{
+        background: blue;
+    }
+    main .block:last-of-type div:first-of-type{
+        background: khaki;
+    }
+    main .block:last-of-type div:last-of-type{
+        background: peru;
+    }
+    main .block div{
+        height: 20em;
+    }
+    nav{
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 1201px) and (max-width: 1600px){
+    main .block:first-of-type div:first-of-type{
+        background-image: url("img/lion.png");
+        background-repeat: no-repeat;
+    }
+    main .block:first-of-type div:last-of-type{
+        background: purple;
+    }
+    main .block:last-of-type div:first-of-type{
+        background: mediumspringgreen;
+    }
+    main .block:last-of-type div:last-of-type{
+        background: deeppink;
+    }
+    main{
+        display: flex;
+        justify-content: space-around;
+    }
+    .block{
+        width: auto;
+    }
+    main .block div{
+        height: 26em;
+        width: 26em;
+        padding: 5px;
+        border-radius: 211px;
+    }
+    header, footer{
+        background-color: greenyellow;
+    }
+    nav{
+        background-color: pink;
+    }
+}
