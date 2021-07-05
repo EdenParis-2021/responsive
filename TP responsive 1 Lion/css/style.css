@@ -1,0 +1,243 @@
+body
+{
+    margin: 0;
+}
+.container
+{
+    border: 2px solid black;
+}
+h1,h2
+{
+    margin: 0;
+}
+div
+{
+    margin: 10px;
+}
+header, footer
+{
+    background-color: blue;
+}
+header
+{
+    height:15vh;
+}
+footer
+{
+    height:15vh;
+}
+nav
+{
+    background-color: red;
+    padding-bottom: 30px;
+}
+main
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.main-left,.main-right
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+ul
+{
+    margin: 0 auto;
+    list-style-type: none;
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ul li
+{
+    font-size: 15px;
+}
+.one,.two,.three,.four
+{
+    margin: 0;
+    height: 30vh;
+    width: 100%;
+}
+.one
+{
+    background-color: blue;
+}
+.two
+{
+    background-color: yellow;
+}
+.three
+{
+    background-color: silver;
+}
+.four
+{
+    background-color: firebrick;
+}
+@media (min-width: 576px) and (max-width: 775px)
+{
+    .one,.two,.three,.four
+    {
+        margin: 10px;
+        height: 30vh;
+        width: 50%;
+    }
+    .one
+    {
+        background-color: rebeccapurple;
+    }
+    .two
+    {
+        background-color: aqua;
+    }
+    .three
+    {
+        background-color: navajowhite;
+    }
+    .four
+    {
+        background-color: limegreen;
+    }
+    main
+    {
+        flex-direction: column;
+    }
+    .main-left,.main-right
+    {
+        flex-direction: row;
+    }
+}
+@media (min-width: 776px) and (max-width: 991px)
+{
+    header, footer
+    {
+        background-color: rebeccapurple;
+    }
+    nav
+    {
+        background-color: cornflowerblue;
+    }
+    .one,.two,.three,.four
+    {
+        margin: 10px;
+        height: 30vh;
+        width: 50%;
+    }
+    .one
+    {
+        background-color: orangered;
+    }
+    .two
+    {
+        background-color: teal;
+    }
+    .three
+    {
+        background-color: darkslategrey;
+    }
+    .four
+    {
+        background-color: indianred;
+    }
+    main
+    {
+        flex-direction: column;
+    }
+    .main-left,.main-right
+    {
+        flex-direction: row;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    header, footer
+    {
+        background-color: limegreen;
+    }
+    nav
+    {
+        background-color: hotpink;
+    }
+    .one,.two,.three,.four
+    {
+        margin: 10px;
+        height: 450px;
+        width: 50%;
+        border-radius: 50%;
+
+    }
+    .one
+    {
+        background: url("../wallpaper.png") center no-repeat ;
+        background-size: cover;
+
+    }
+    .two
+    {
+        background-color: palegreen;
+    }
+    .three
+    {
+        background-color: purple;
+    }
+    .four
+    {
+        background-color: lightpink;
+    }
+    main
+    {
+        flex-direction: column;
+    }
+    .main-left,.main-right
+    {
+        flex-direction: row;
+    }
+}
+@media (min-width: 1200px)
+{
+    header, footer
+    {
+        background-color: blueviolet;
+    }
+    nav
+    {
+        background-color: #9f4550;
+    }
+    .one,.two,.three,.four
+    {
+        margin: 10px;
+        height: 30vh;
+        width: 50%;
+    }
+    .one
+    {
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);    }
+    .two
+    {
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+    .three
+    {
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+    .four
+    {
+        background: rgb(131,58,180);
+        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    }
+    main
+    {
+        flex-direction: column;
+    }
+    .main-left,.main-right
+    {
+        flex-direction: row;
+    }
+}
